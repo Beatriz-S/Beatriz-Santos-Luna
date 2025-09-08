@@ -1,79 +1,63 @@
-/* Make header fixed at top */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #333; /* dark background */
-  color: white;
-  padding: 1rem;
-  z-index: 1000; /* keep it above other content */
+body {
+  background-color: #f9f9f9; /* soft gray background */
 }
 
-/* Remove list bullets and space links */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* horizontal layout */
-  gap: 1.5rem; /* space between links */
+body {
+  color: #333333; /* dark gray for readability */
 }
 
-/* Style nav links */
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+body {
+  font-family: "Arial", sans-serif;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Add padding so content isn’t hidden behind fixed header */
 section {
-  padding: 80px 20px; /* adjust top padding based on header height */
+  margin: 40px 0; /* space between sections */
 }
 
-/* ---------- Experience Section ---------- */
-.job {
-  margin-bottom: 2rem;
+#about {
+  text-align: center;
 }
 
-.job-header {
-  display: flex; /* Use Flexbox */
-  justify-content: space-between; /* Title left, date right */
-  align-items: center;
-}
-
-.job-title {
-  font-size: 1.2rem;
+h1 {
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #1a73e8; /* blue accent */
 }
 
-.job-date {
-  font-size: 1rem;
-  color: #777;
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444;
 }
 
-.job-desc {
-  margin-top: 0.5rem;
-  padding-left: 0.5rem;
+#name {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #2c3e50;
+  text-align: center;
 }
 
-/* ---------- Connect Section ---------- */
-.social-links {
-  display: flex; /* Lay links side by side */
-  gap: 1.5rem; /* Space between links */
-  margin-top: 1rem;
+.experience li {
+  background: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.social-links a {
+.connect a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background: #1a73e8;
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-.social-links a:hover {
-  color: #0077b5; /* hover effect (LinkedIn blue) */
+.connect a:hover {
+  background: #1558b0;
 }
