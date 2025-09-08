@@ -1,0 +1,79 @@
+/* Make header fixed at top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333; /* dark background */
+  color: white;
+  padding: 1rem;
+  z-index: 1000; /* keep it above other content */
+}
+
+/* Remove list bullets and space links */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* horizontal layout */
+  gap: 1.5rem; /* space between links */
+}
+
+/* Style nav links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Add padding so content isn’t hidden behind fixed header */
+section {
+  padding: 80px 20px; /* adjust top padding based on header height */
+}
+
+/* ---------- Experience Section ---------- */
+.job {
+  margin-bottom: 2rem;
+}
+
+.job-header {
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Title left, date right */
+  align-items: center;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.job-date {
+  font-size: 1rem;
+  color: #777;
+}
+
+.job-desc {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* ---------- Connect Section ---------- */
+.social-links {
+  display: flex; /* Lay links side by side */
+  gap: 1.5rem; /* Space between links */
+  margin-top: 1rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* hover effect (LinkedIn blue) */
+}
