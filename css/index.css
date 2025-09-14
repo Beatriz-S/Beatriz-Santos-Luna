@@ -1,12 +1,6 @@
 body {
   background-color: #f9f9f9; /* soft gray background */
-}
-
-body {
   color: #333333; /* dark gray for readability */
-}
-
-body {
   font-family: "Arial", sans-serif;
 }
 
@@ -39,7 +33,7 @@ h2 {
   text-align: center;
 }
 
-.experience li {
+#experience li {
   background: #ffffff;
   padding: 15px;
   margin: 10px 0;
@@ -47,7 +41,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.connect a {
+#connect a {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px;
@@ -58,6 +52,6 @@ h2 {
   transition: 0.3s;
 }
 
-.connect a:hover {
+#connect a:hover {
   background: #1558b0;
 }
