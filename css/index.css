@@ -13,7 +13,7 @@ section {
 
 /* ---------- Header & Navigation ---------- */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -76,27 +76,27 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#job {
+.job {
   margin-bottom: 2rem;
 }
 
-#job-header {
+.job-header {
   display: flex; /* Use Flexbox */
   justify-content: space-between; /* Title left, date right */
   align-items: center;
 }
 
-#job-title {
+.job-title {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-#job-date {
+.job-date {
   font-size: 1rem;
   color: #777;
 }
 
-#job-desc {
+.job-desc {
   margin-top: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -131,10 +131,4 @@ h2 {
 
 #social-links a:hover {
   color: #0077b5; /* hover effect (LinkedIn blue) */
-}
-
-html,
-body {
-  background: #f9f9f9 !important;
-  min-height: 100vh;
 }
