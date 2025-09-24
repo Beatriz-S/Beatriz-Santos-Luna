@@ -1,13 +1,47 @@
+/* ---------- Global Styles ---------- */
 body {
   background-color: #f9f9f9; /* soft gray background */
   color: #333333; /* dark gray for readability */
   font-family: "Arial", sans-serif;
+  margin: 0; /* reset default margin for fixed header layout */
 }
 
 section {
   margin: 40px 0; /* space between sections */
+  padding: 80px 20px; /* adjust top padding so header doesn’t overlap content */
 }
 
+/* ---------- Header & Navigation ---------- */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333; /* dark background */
+  color: white;
+  padding: 1rem;
+  z-index: 1000; /* keep it above other content */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* horizontal layout */
+  gap: 1.5rem; /* space between links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- About Section ---------- */
 #about {
   text-align: center;
 }
@@ -33,6 +67,7 @@ h2 {
   text-align: center;
 }
 
+/* ---------- Experience Section ---------- */
 #experience li {
   background: #ffffff;
   padding: 15px;
@@ -41,6 +76,32 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.job {
+  margin-bottom: 2rem;
+}
+
+.job-header {
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Title left, date right */
+  align-items: center;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.job-date {
+  font-size: 1rem;
+  color: #777;
+}
+
+.job-desc {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* ---------- Connect Section ---------- */
 #connect a {
   display: inline-block;
   padding: 10px 20px;
@@ -54,4 +115,20 @@ h2 {
 
 #connect a:hover {
   background: #1558b0;
+}
+
+#social-links {
+  display: flex; /* Lay links side by side */
+  gap: 1.5rem; /* Space between links */
+  margin-top: 1rem;
+}
+
+#social-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#social-links a:hover {
+  color: #0077b5; /* hover effect (LinkedIn blue) */
 }
