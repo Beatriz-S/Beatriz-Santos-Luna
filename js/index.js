@@ -12,12 +12,7 @@ if (!footer) {
   document.body.appendChild(footer);
 }
 
-// Optional: Style the footer (can move to CSS later)
-footer.style.textAlign = "center";
-footer.style.padding = "20px";
-footer.style.backgroundColor = "#333";
-footer.style.color = "white";
-footer.style.marginTop = "40px";
+// Footer styling moved to CSS file
 
 // Step 4: Create a new <p> element
 const copyright = document.createElement("p");
