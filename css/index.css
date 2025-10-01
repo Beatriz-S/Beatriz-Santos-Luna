@@ -13,7 +13,7 @@ section {
 
 /* ---------- Header & Navigation ---------- */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -96,7 +96,7 @@ h2 {
   color: #777;
 }
 
-#job-desc {
+.job-desc {
   margin-top: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -125,12 +125,12 @@ h2 {
 
 #social-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
 #social-links a:hover {
-  color: #0077b5; /* hover effect (LinkedIn blue) */
+  color: #e8f0fe; /* light blue hover effect for better contrast */
 }
 
 html,

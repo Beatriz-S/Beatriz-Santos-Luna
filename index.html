@@ -9,14 +9,16 @@
   <body>
     <header>
       <nav>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#connect">Connect</a></li>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
       </nav>
     </header>
-    <h1>Beatriz Santos</h1>
+    <h1 id="name">Beatriz Santos</h1>
     <!-- About Section -->
     <section id="about">
       <h2>About</h2>
@@ -36,7 +38,9 @@
       <h2>Experience</h2>
       <div class="job">
         <div class="job-header">
-          <h3 class="Software Quality Assurance Engineer - Windows on Arm"></h3>
+          <h3 class="job-title">
+            Software Quality Assurance Engineer - Windows on Arm>
+          </h3>
           <span class="job-date">April 2025 - August 2025</span>
         </div>
         <p class="job-desc">
@@ -87,10 +91,10 @@
       </div>
       <div class="job">
         <div class="job-header">
-          <h3 class="job-title">Software Quality Assurance Engineer - DLSS></h3>
+          <h3 class="job-title">Quality Assurance Engineer - DLSS></h3>
           <span class="job-date">August 2021 - January 2022</span>
         </div>
-        <p id="job-desc">
+        <p class="job-desc">
           Validate software titles for Deep Learning Super Sampling(DLSS).
           Performed thorough testing and created documentation for app
           integration failures. Executed detailed testing protocols and provided
