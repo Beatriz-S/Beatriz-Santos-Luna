@@ -130,7 +130,6 @@ h2 {
 }
 
 #social-links a:hover {
-<<<<<<< HEAD
   color: #e8f0fe; /* light blue hover effect for better contrast */
 }
 
@@ -193,7 +192,4 @@ body {
     gap: 0.5rem; /* tighter gap */
     font-size: 0.9rem; /* smaller font */
   }
-=======
-  color: #0077b5; /* hover effect (LinkedIn blue) */
->>>>>>> 94646ea2212b1f82b96a637673d9fcf0c080b91e
 }
