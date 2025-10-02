@@ -13,11 +13,7 @@ section {
 
 /* ---------- Header & Navigation ---------- */
 header {
-<<<<<<< HEAD
-  position: fixed;
-=======
   position: sticky;
->>>>>>> 94646ea2212b1f82b96a637673d9fcf0c080b91e
   top: 0;
   left: 0;
   width: 100%;
@@ -100,11 +96,7 @@ h2 {
   color: #777;
 }
 
-<<<<<<< HEAD
-#job-desc {
-=======
 .job-desc {
->>>>>>> 94646ea2212b1f82b96a637673d9fcf0c080b91e
   margin-top: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -133,11 +125,7 @@ h2 {
 
 #social-links a {
   text-decoration: none;
-<<<<<<< HEAD
   color: white;
-=======
-  color: #333;
->>>>>>> 94646ea2212b1f82b96a637673d9fcf0c080b91e
   font-weight: bold;
 }
 
