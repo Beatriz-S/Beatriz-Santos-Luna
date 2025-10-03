@@ -125,10 +125,71 @@ h2 {
 
 #social-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
 #social-links a:hover {
-  color: #0077b5; /* hover effect (LinkedIn blue) */
+  color: #e8f0fe; /* light blue hover effect for better contrast */
+}
+
+html,
+body {
+  background: #f9f9f9 !important;
+  min-height: 100vh;
+}
+
+/* ---------- Default: Desktop First ---------- */
+
+/* ---------- Tablet (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  /* Element 1: Headers */
+  h1 {
+    font-size: 2rem; /* smaller font */
+    color: #2c3e50; /* darker shade */
+  }
+  h2 {
+    font-size: 1.5rem; /* shrink subheaders */
+    color: #555; /* soften color */
+  }
+
+  /* Element 2: Navigation */
+  nav ul {
+    gap: 1rem; /* tighter spacing */
+    background-color: #444; /* darker background for contrast */
+    padding: 0.5rem; /* add padding */
+  }
+
+  /* Element 3: Name at top (#name) */
+  #name {
+    font-size: 2.2rem; /* reduce size */
+    font-style: italic; /* change style */
+  }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  /* Element 1: Headers */
+  h1 {
+    font-size: 1.5rem; /* smaller */
+    color: #1a73e8; /* bright blue */
+  }
+  h2 {
+    font-size: 1.2rem; /* smaller */
+    color: #222; /* nearly black */
+  }
+
+  /* Element 2: Navigation */
+  nav ul {
+    flex-direction: column; /* stack links */
+    background-color: #222; /* darker bg */
+    align-items: center; /* center them */
+  }
+
+  /* Element 3: Social Links */
+  #social-links {
+    flex-direction: column; /* stack links */
+    gap: 0.5rem; /* tighter gap */
+    font-size: 0.9rem; /* smaller font */
+  }
 }
