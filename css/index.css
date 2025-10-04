@@ -125,14 +125,16 @@ h2 {
 
 #social-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
+  color: white;
   font-weight: bold;
 }
 
 #social-links a:hover {
-  color: #0077b5; /* hover effect (LinkedIn blue) */
+  color: #e8f0fe; /* light blue hover effect for better contrast */
 }
 
+<<<<<<< HEAD
 /* ---------- Message Form Styling ---------- */
 form[name="leave_message"] {
   max-width: 600px;
@@ -396,5 +398,126 @@ form[name="leave_message"] button[type="submit"]:active {
     width: 100%;
     min-height: 56px;
     font-size: 1.1rem;
+=======
+html,
+body {
+  background: #f9f9f9 !important;
+  min-height: 100vh;
+}
+
+/* ---------- Default: Desktop First ---------- */
+
+/* ---------- Tablet (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  /* Element 1: Headers */
+  h1 {
+    font-size: 2rem; /* smaller font */
+    color: #2c3e50; /* darker shade */
+  }
+  h2 {
+    font-size: 1.5rem; /* shrink subheaders */
+    color: #555; /* soften color */
+  }
+
+  /* Element 2: Navigation */
+  nav ul {
+    gap: 1rem; /* tighter spacing */
+    background-color: #444; /* darker background for contrast */
+    padding: 0.5rem; /* add padding */
+  }
+
+  /* Element 3: Name at top (#name) */
+  #name {
+    font-size: 2.2rem; /* reduce size */
+    font-style: italic; /* change style */
+  }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  /* Element 1: Headers */
+  h1 {
+    font-size: 1.5rem; /* smaller */
+    color: #1a73e8; /* bright blue */
+  }
+  h2 {
+    font-size: 1.2rem; /* smaller */
+    color: #222; /* nearly black */
+  }
+
+  /* Element 2: Navigation */
+  nav ul {
+    flex-direction: column; /* stack links */
+    background-color: #222; /* darker bg */
+    align-items: center; /* center them */
+  }
+
+  /* Element 3: Social Links */
+  #social-links {
+    flex-direction: column; /* stack links */
+    gap: 0.5rem; /* tighter gap */
+    font-size: 0.9rem; /* smaller font */
+  }
+}
+
+/* ---------- Footer Section ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ---------- Skills Section ---------- */
+#skills ul {
+  display: flex; /* use Flexbox for layout */
+  flex-wrap: wrap; /* wrap skills to new lines if needed */
+  gap: 10px; /* space between each skill */
+  list-style: none; /* remove default bullets */
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+  justify-content: center; /* center items horizontally */
+}
+
+#skills li {
+  background-color: #1a73e8; /* blue background */
+  color: white; /* white text */
+  padding: 8px 15px; /* spacing inside each skill */
+  border-radius: 20px; /* rounded pills */
+  font-weight: bold; /* emphasize text */
+  font-size: 0.95rem; /* slightly smaller text */
+  transition: 0.3s; /* smooth hover effect */
+}
+
+#skills li:hover {
+  background-color: #1558b0; /* darker blue on hover */
+  cursor: default;
+}
+
+/* ---------- Tablet (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  #skills ul {
+    gap: 8px; /* slightly smaller gap on tablet */
+    justify-content: flex-start; /* align left */
+  }
+
+  #skills li {
+    font-size: 0.9rem; /* smaller font */
+  }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  #skills ul {
+    flex-direction: column; /* stack skills vertically */
+    gap: 6px; /* reduce space for mobile */
+    align-items: center; /* center horizontally */
+  }
+
+  #skills li {
+    font-size: 0.85rem; /* smaller font for mobile */
+    padding: 6px 12px;
+>>>>>>> main
   }
 }
