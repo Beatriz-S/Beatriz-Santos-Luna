@@ -126,6 +126,7 @@ h2 {
 #social-links a {
   text-decoration: none;
   color: white;
+  color: white;
   font-weight: bold;
 }
 
@@ -191,5 +192,66 @@ body {
     flex-direction: column; /* stack links */
     gap: 0.5rem; /* tighter gap */
     font-size: 0.9rem; /* smaller font */
+  }
+}
+
+/* ---------- Footer Section ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ---------- Skills Section ---------- */
+#skills ul {
+  display: flex; /* use Flexbox for layout */
+  flex-wrap: wrap; /* wrap skills to new lines if needed */
+  gap: 10px; /* space between each skill */
+  list-style: none; /* remove default bullets */
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+  justify-content: center; /* center items horizontally */
+}
+
+#skills li {
+  background-color: #1a73e8; /* blue background */
+  color: white; /* white text */
+  padding: 8px 15px; /* spacing inside each skill */
+  border-radius: 20px; /* rounded pills */
+  font-weight: bold; /* emphasize text */
+  font-size: 0.95rem; /* slightly smaller text */
+  transition: 0.3s; /* smooth hover effect */
+}
+
+#skills li:hover {
+  background-color: #1558b0; /* darker blue on hover */
+  cursor: default;
+}
+
+/* ---------- Tablet (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  #skills ul {
+    gap: 8px; /* slightly smaller gap on tablet */
+    justify-content: flex-start; /* align left */
+  }
+
+  #skills li {
+    font-size: 0.9rem; /* smaller font */
+  }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  #skills ul {
+    flex-direction: column; /* stack skills vertically */
+    gap: 6px; /* reduce space for mobile */
+    align-items: center; /* center horizontally */
+  }
+
+  #skills li {
+    font-size: 0.85rem; /* smaller font for mobile */
+    padding: 6px 12px;
   }
 }
