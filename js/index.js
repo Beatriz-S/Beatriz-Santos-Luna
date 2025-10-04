@@ -1,7 +1,7 @@
 // Handle Message Form Submit
 const messageForm = document.querySelector('form[name="leave_message"]');
 
-messageForm.addEventListener('submit', function(event) {
+messageForm.addEventListener('submit', (event) => {
     // Prevent the default form submission
     event.preventDefault();
     
@@ -26,7 +26,7 @@ messageForm.addEventListener('submit', function(event) {
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
     
-    removeButton.addEventListener('click', function(event) {
+    removeButton.addEventListener('click', (event) => {
         const entry = event.target.parentNode;
         entry.remove();
     });
