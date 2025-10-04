@@ -134,7 +134,6 @@ h2 {
   color: #e8f0fe; /* light blue hover effect for better contrast */
 }
 
-<<<<<<< HEAD
 /* ---------- Message Form Styling ---------- */
 form[name="leave_message"] {
   max-width: 600px;
@@ -398,7 +397,6 @@ form[name="leave_message"] button[type="submit"]:active {
     width: 100%;
     min-height: 56px;
     font-size: 1.1rem;
-=======
 html,
 body {
   background: #f9f9f9 !important;
@@ -518,6 +516,5 @@ footer {
   #skills li {
     font-size: 0.85rem; /* smaller font for mobile */
     padding: 6px 12px;
->>>>>>> main
   }
 }
