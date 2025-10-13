@@ -53,3 +53,35 @@ for (let i = 0; i < skills.length; i++) {
   // Append the <li> to the <ul>
   skillsList.appendChild(skill);
 }
+
+// ==================== Fetch GitHub Repositories ====================
+
+// Fetch repositories from GitHub API
+fetch("https://api.github.com/users/Beatriz-S/repos")
+  .then((response) => {
+    return response.json();
+  })
+  .then((repositories) => {
+    console.log(repositories);
+
+    // Select the projects section by id
+    const projectSection = document.querySelector("#projects");
+
+    // Select the <ul> inside the projects section
+    const projectList = projectSection.querySelector("ul");
+
+    // Loop through the repositories array
+    for (let i = 0; i < repositories.length; i++) {
+      // Create a new <li> element
+      const project = document.createElement("li");
+
+      // Set the inner text to the repository name
+      project.innerText = repositories[i].name;
+
+      // Append the project to the project list
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error("Error fetching repositories:", error);
+  });
