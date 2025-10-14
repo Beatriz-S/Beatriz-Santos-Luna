@@ -397,6 +397,9 @@ form[name="leave_message"] button[type="submit"]:active {
     width: 100%;
     min-height: 56px;
     font-size: 1.1rem;
+  }
+}
+
 html,
 body {
   background: #f9f9f9 !important;

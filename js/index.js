@@ -53,7 +53,6 @@ if (!footer) {
   document.body.appendChild(footer);
 }
 
-// Footer styling moved to CSS file
 
 // Step 4: Create a new <p> element
 const copyright = document.createElement("p");
