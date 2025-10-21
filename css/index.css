@@ -315,50 +315,6 @@ form[name="leave_message"] button[type="submit"]:active {
 }
 
 /* ---------- Mobile Responsive Design ---------- */
-@media (max-width: 768px) {
-  form[name="leave_message"] {
-    margin: 1rem;
-    padding: 1.5rem;
-    gap: 1.25rem;
-  }
-  
-  form[name="leave_message"] input[type="text"],
-  form[name="leave_message"] input[type="email"],
-  form[name="leave_message"] textarea {
-    padding: 1.25rem; /* Larger padding for easier touch interaction */
-    font-size: 1.1rem; /* Slightly larger text for mobile readability */
-    min-height: 56px; /* Larger touch target for mobile */
-  }
-  
-  form[name="leave_message"] textarea {
-    min-height: 140px; /* More space for mobile typing */
-  }
-  
-  form[name="leave_message"] button[type="submit"] {
-    padding: 1.25rem 2.5rem;
-    font-size: 1.1rem;
-    min-height: 56px; /* Larger touch target for mobile */
-    width: 100%; /* Full width on mobile for easier tapping */
-    align-self: stretch;
-  }
-  
-  form[name="leave_message"] label {
-    font-size: 1.1rem; /* Slightly larger labels for mobile */
-  }
-  
-  #messages {
-    padding: 1rem;
-  }
-  
-  #messages li {
-    padding: 1.25rem;
-  }
-  
-  #messages li button {
-    width: 100%;
-    min-height: 48px;
-  }
-}
 
 @media (max-width: 480px) {
   form[name="leave_message"] {
@@ -406,59 +362,33 @@ body {
   min-height: 100vh;
 }
 
-/* ---------- Default: Desktop First ---------- */
 
-/* ---------- Tablet (≤1024px) ---------- */
-@media (max-width: 1024px) {
-  /* Element 1: Headers */
-  h1 {
-    font-size: 2rem; /* smaller font */
-    color: #2c3e50; /* darker shade */
-  }
-  h2 {
-    font-size: 1.5rem; /* shrink subheaders */
-    color: #555; /* soften color */
-  }
-
-  /* Element 2: Navigation */
-  nav ul {
-    gap: 1rem; /* tighter spacing */
-    background-color: #444; /* darker background for contrast */
-    padding: 0.5rem; /* add padding */
-  }
-
-  /* Element 3: Name at top (#name) */
-  #name {
-    font-size: 2.2rem; /* reduce size */
-    font-style: italic; /* change style */
-  }
+/* ---------- Projects Section ---------- */
+#projects ul {
+  list-style: none; /* remove default bullets */
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+  display: grid; /* use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* responsive columns */
+  gap: 20px; /* space between project cards */
 }
 
-/* ---------- Mobile (≤768px) ---------- */
-@media (max-width: 768px) {
-  /* Element 1: Headers */
-  h1 {
-    font-size: 1.5rem; /* smaller */
-    color: #1a73e8; /* bright blue */
-  }
-  h2 {
-    font-size: 1.2rem; /* smaller */
-    color: #222; /* nearly black */
-  }
+#projects li {
+  background-color: #ffffff; /* white background */
+  padding: 20px; /* spacing inside each project */
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  font-weight: 600; /* emphasize text */
+  font-size: 1rem; /* standard text size */
+  color: #2c3e50; /* dark text */
+  transition: transform 0.3s, box-shadow 0.3s; /* smooth hover effect */
+  border-left: 4px solid #1a73e8; /* blue accent border */
+}
 
-  /* Element 2: Navigation */
-  nav ul {
-    flex-direction: column; /* stack links */
-    background-color: #222; /* darker bg */
-    align-items: center; /* center them */
-  }
-
-  /* Element 3: Social Links */
-  #social-links {
-    flex-direction: column; /* stack links */
-    gap: 0.5rem; /* tighter gap */
-    font-size: 0.9rem; /* smaller font */
-  }
+#projects li:hover {
+  transform: translateY(-5px); /* lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* stronger shadow on hover */
+  cursor: pointer;
 }
 
 /* ---------- Footer Section ---------- */
@@ -498,6 +428,30 @@ footer {
 
 /* ---------- Tablet (≤1024px) ---------- */
 @media (max-width: 1024px) {
+  /* Headers */
+  h1 {
+    font-size: 2rem; /* smaller font */
+    color: #2c3e50; /* darker shade */
+  }
+  h2 {
+    font-size: 1.5rem; /* shrink subheaders */
+    color: #555; /* soften color */
+  }
+
+  /* Navigation */
+  nav ul {
+    gap: 1rem; /* tighter spacing */
+    background-color: #444; /* darker background for contrast */
+    padding: 0.5rem; /* add padding */
+  }
+
+  /* Name at top (#name) */
+  #name {
+    font-size: 2.2rem; /* reduce size */
+    font-style: italic; /* change style */
+  }
+
+  /* Skills Section */
   #skills ul {
     gap: 8px; /* slightly smaller gap on tablet */
     justify-content: flex-start; /* align left */
@@ -506,10 +460,91 @@ footer {
   #skills li {
     font-size: 0.9rem; /* smaller font */
   }
+
+  /* Projects adjustments for tablet */
+  #projects ul {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* slightly smaller cards */
+    gap: 15px; /* smaller gap */
+  }
+
+  #projects li {
+    padding: 15px; /* reduce padding */
+    font-size: 0.95rem; /* slightly smaller font */
+  }
 }
 
 /* ---------- Mobile (≤768px) ---------- */
 @media (max-width: 768px) {
+  /* Headers */
+  h1 {
+    font-size: 1.5rem; /* smaller */
+    color: #1a73e8; /* bright blue */
+  }
+  h2 {
+    font-size: 1.2rem; /* smaller */
+    color: #222; /* nearly black */
+  }
+
+  /* Navigation */
+  nav ul {
+    flex-direction: column; /* stack links */
+    background-color: #222; /* darker bg */
+    align-items: center; /* center them */
+  }
+
+  /* Social Links */
+  #social-links {
+    flex-direction: column; /* stack links */
+    gap: 0.5rem; /* tighter gap */
+    font-size: 0.9rem; /* smaller font */
+  }
+
+  /* Message Form */
+  form[name="leave_message"] {
+    margin: 1rem;
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+  
+  form[name="leave_message"] input[type="text"],
+  form[name="leave_message"] input[type="email"],
+  form[name="leave_message"] textarea {
+    padding: 1.25rem; /* Larger padding for easier touch interaction */
+    font-size: 1.1rem; /* Slightly larger text for mobile readability */
+    min-height: 56px; /* Larger touch target for mobile */
+  }
+  
+  form[name="leave_message"] textarea {
+    min-height: 140px; /* More space for mobile typing */
+  }
+  
+  form[name="leave_message"] button[type="submit"] {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.1rem;
+    min-height: 56px; /* Larger touch target for mobile */
+    width: 100%; /* Full width on mobile for easier tapping */
+    align-self: stretch;
+  }
+  
+  form[name="leave_message"] label {
+    font-size: 1.1rem; /* Slightly larger labels for mobile */
+  }
+  
+  /* Messages Section */
+  #messages {
+    padding: 1rem;
+  }
+  
+  #messages li {
+    padding: 1.25rem;
+  }
+  
+  #messages li button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  /* Skills Section */
   #skills ul {
     flex-direction: column; /* stack skills vertically */
     gap: 6px; /* reduce space for mobile */
@@ -519,5 +554,16 @@ footer {
   #skills li {
     font-size: 0.85rem; /* smaller font for mobile */
     padding: 6px 12px;
+  }
+
+  /* Projects adjustments for mobile */
+  #projects ul {
+    grid-template-columns: 1fr; /* single column layout */
+    gap: 12px; /* smaller gap for mobile */
+  }
+
+  #projects li {
+    padding: 15px; /* consistent padding */
+    font-size: 0.9rem; /* smaller font */
   }
 }
